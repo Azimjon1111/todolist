@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Вопросы по CSS</title>
+  </head>
+  <style>
+    .question {
+      position: relative;
+    }
+
+    .centered-container {
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+      background: silver;
+      height: 200px;
+    }
+
+    .centered-container__bluebox {
+      height: 20px;
+      width: 20px;
+      background: blue;
+    }
+
+    .centered-flexbox {
+      background: silver;
+      height: 200px;
+      display: flex ;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .centered-flexbox__bluebox {
+      height: 20px;
+      width: 20px;
+      background: blue;
+    }
+
+    .red {
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="question">
+      <h1>Questions</h1>
+      <p class="red">
+        Important!: Не писать ответы прямо в Гист. Зделайте форк и отправте
+        ссылку на ответы.
+      </p>
+      <p>
+        Ссылка на Sandbox: https://codesandbox.io/s/1f0dv?file=/index.html
+      </p>
+      <h2>1. Сenter Blue Div</h2>
+      <p>
+        Исправь ошибку и зацентрируй голубой див елемент по вертикали и по
+        горизонтали по серому контейнеру.<br />
+      </p>
+
+      <div class="centered-container">
+        <div class="centered-container__bluebox"></div>
+      </div>
+    </div>
+    <div class="question">
+      <h2>1. Сenter Blue Div 2</h2>
+      <p>
+        Здесь голубой див должен быть зацентрирован по вертикали.<br />
+        Какая здесь была ошибка?
+      </p>
+
+      <div class="centered-flexbox">
+        <div class="centered-flexbox__bluebox"></div>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>2. Сenter Blue Div 2</h2>
+      <p>
+        Здесь голубой див должен быть зацентрирован по вертикали и
+        горизонтали.<br />
+        Какая здесь была ошибка?
+      </p>
+
+      <div class="centered-flexbox">
+        <div class="centered-flexbox__bluebox"></div>
+      </div>
+    </div>
+
+    <div class="question">
+      <h2>3. Сenter Blue Div 3</h2>
+      <p>
+        1. Какие варианты центрирования елемента по горизонтали еще знаете?
+        <br/>
+        ответи
+        <br/>
+        1. left: 50% right: 50%; margin: auto
+        <br />
+        2. Какие варианты центрирования елемента по вертикали еще знаете?
+        <br />
+        2. align-items: center
+      </p>
+    </div>
+    <div class="question">
+      <h2>1. Сenter Blue Div 3</h2>
+      <p>
+        В чем разница между <code>display: block;</code> и
+        <code>display: inline;</code>?
+      </p>
+      <pre>
+        При отсутсвтии display у каждого элемента имеется свое изначальное состояние display.
+
+        • inline-table - Определяет, что элемент является таблицей как при использовании тега , но при этом таблица является встроенным элементом и происходит ее обтекание другими элементами, например, текстом.
+        
+        • block - Элемент показывается как блочный. Применение этого значения для встроенных элементов, например тега , заставляет его вести подобно блокам — происходит перенос строк в начале и в конце содержимого.
+      </pre>
+    </div>
+  </body>
+</html>
